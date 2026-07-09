@@ -36,4 +36,16 @@ public class LibraryService {
         return null;
     }
 
+    public void listBooks() {
+
+        if (lista.isEmpty()) {
+            System.out.println("Nessun libro presente.");
+            return;
+        }
+
+        for (Book book : lista) {
+            System.out.println(book);
+        }
+    }
+
     }
