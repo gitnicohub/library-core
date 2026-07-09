@@ -23,4 +23,18 @@ public class LibraryService {
         System.out.println("Non è stato trovato nessun id.");
         return null;
     }
-}
+
+
+    public void removeBook(Long id) {
+
+        for (int i = 0; i < lista.size(); i++) {
+
+            if (lista.get(i).getId().equals(id)) {
+                lista.remove(i);
+                break;
+            }
+        }
+
+    }
+
+    }
